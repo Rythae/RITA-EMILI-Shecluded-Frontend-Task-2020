@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/css/main.e1a8786a.chunk.css",
+    "main.js": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/main.eb297338.chunk.js",
+    "main.js.map": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/main.eb297338.chunk.js.map",
+    "runtime-main.js": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/runtime-main.8ae1a6ee.js",
+    "runtime-main.js.map": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/runtime-main.8ae1a6ee.js.map",
+    "static/js/2.06b3cdc7.chunk.js": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/2.06b3cdc7.chunk.js",
+    "static/js/2.06b3cdc7.chunk.js.map": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/2.06b3cdc7.chunk.js.map",
+    "index.html": "/RITA-EMILI-Shecluded-Frontend-Task-2020/index.html",
+    "precache-manifest.8a37b438fef506a4b718dc3e4d65aaa4.js": "/RITA-EMILI-Shecluded-Frontend-Task-2020/precache-manifest.8a37b438fef506a4b718dc3e4d65aaa4.js",
+    "service-worker.js": "/RITA-EMILI-Shecluded-Frontend-Task-2020/service-worker.js",
+    "static/css/main.e1a8786a.chunk.css.map": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/css/main.e1a8786a.chunk.css.map",
+    "static/js/2.06b3cdc7.chunk.js.LICENSE.txt": "/RITA-EMILI-Shecluded-Frontend-Task-2020/static/js/2.06b3cdc7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ae1a6ee.js",
+    "static/js/2.06b3cdc7.chunk.js",
+    "static/css/main.e1a8786a.chunk.css",
+    "static/js/main.eb297338.chunk.js"
+  ]
+}
