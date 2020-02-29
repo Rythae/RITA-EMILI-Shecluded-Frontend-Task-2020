@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 import * as actionCreators from '../store/actions/actions';
 
+import '../sass/main.scss'
+
 const apiKey = `d3cd3f3e-a111-4460-8c2d-faf8e578ea96`
 
 const CatImg = ({ breed_id }) => {
@@ -27,17 +29,20 @@ class Cats extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-cat">
+        <h1 className="heading-primary">Your favourite lovely cats!</h1>
         <section className="breeds">
           {this.props.breeds.map((breed) => (<>
-              <CatImg breed_id={breed.breed_id}/>
-            <div className="breed-details">
+              <section className="cat-img"><CatImg breed_id={breed.breed_id}/></section>
+            <div className="breeds_details">
+            <div className="breeds-details-2">
               <h5>{breed.name}</h5>
               <p>{breed.temperament}</p>
               <p>{breed.life_span}</p>
               <p>{breed.shedding_level}</p>
               <p>{breed.dog_friendly}</p>
               <p>{breed.child}</p>
+              </div>
             </div>
           </>))}
         </section>

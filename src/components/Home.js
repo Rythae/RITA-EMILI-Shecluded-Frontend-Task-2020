@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import '../sass/main.scss';
 
 class Home extends Component{
 
@@ -8,18 +8,16 @@ class Home extends Component{
         return (
             <div className="container-home">
                 <div className="center-home">
-                <h1>Welcome to Homepage!</h1>
-                <p>We have adorable cats for sale</p>
-                <button className="view-cats">
-                <Link to="/cats" className="nav-link">
-                    View cats
-                </Link>
-                </button><br/>
-                <button className="view-cats">
-                <Link to="/characters" className="nav-link">
-                    View characters
-                </Link>
-                </button>
+                <h1 className="welcome">Welcome to Homepage!</h1>
+                <p className="for-sale">Do take a tour and have fun!</p>
+                <div className="center-link">
+                    <Link to="/cats" className="nav-link">
+                        View cats
+                    </Link>
+                    <Link to="/characters" className="nav-link">
+                        LOTR
+                    </Link>
+                </div>
                 </div>
             </div>
         );
