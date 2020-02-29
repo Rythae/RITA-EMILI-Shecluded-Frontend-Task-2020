@@ -1,0 +1,34 @@
+.epic {
+    background-color: #fff;
+    max-width: 120rem;
+    margin: 8rem auto;
+    box-shadow: $shadow-dark;
+
+    height: 50rem;
+
+    .lotr-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 2rem;
+
+        justify-content: center;
+        justify-items: center;
+        
+    }
+
+    .details {
+        font-size: 1.5rem;
+    }
+
+    .heading-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        font-family: $font-display;
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+}
