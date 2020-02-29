@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import {connect} from 'react-redux';
+import { fetchCats } from './store/actions/actions';
+import Home from  './components/Home';
+import Cats from './components/Cats';
+import LOTR from './components/LOTR';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import '../src/sass/main.scss';
+
+
+
+class App extends Component {
+
+  componentDidMount = () => {
+    this.props.fetchCats()
+  }
+
+  render () {
+    return (
+      <Router>
+        <div className="container">
+        <Route path="/" exact component={Home} />
+        <Route path="/cats" component={Cats} />
+        <Route path="/characters" component={LOTR} />
+        </div>
+      </Router>
+    );
+  }
+ 
 }
 
-export default App;
+const mapStateToProps = state => {
+      return {
+        breeds: state.cat.catbreeds
+      }
+}
+
+const mapDispatchToProps = dispatch => {
+      return {
+          fetchCats: () => dispatch(fetchCats())
+      }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
