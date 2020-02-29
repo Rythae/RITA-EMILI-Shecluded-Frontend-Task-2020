@@ -1,0 +1,67 @@
+body {
+    background-color: $color-primary-light;
+}
+
+.container-home {
+    background-color: #fff;
+    max-width: 120rem;
+    margin: 8rem auto;
+    box-shadow: $shadow-dark;
+
+    height: 50rem;
+
+    .center-home {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 15rem;
+
+        .center-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14rem;
+        height: 4rem;
+        margin-right: 2.5rem;
+        border-radius: 2px;
+        text-decoration: none;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow:  $shadow-dark;
+        color: #333;
+        font-size: 1.5rem;
+        font-family: $font-display;
+        border: none;
+        font-weight:700;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+
+    .welcome {
+        font-size: 4rem;
+        font-family: $font-display;
+    }
+
+    .for-sale {
+        font-size: 2rem;
+        font-weight: 400;
+        color: currentColor;
+        font-style: italic;
+        margin-bottom: 3rem;
+        color: $color-primary-dark;
+    }
+
+}
+
+

@@ -1,0 +1,53 @@
+.container-cat {
+    background-color: #fff;
+    max-width: 120rem;
+    margin: 8rem auto;
+    box-shadow: $shadow-dark;
+
+    height: 160rem;
+
+    .heading-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+        font-family: $font-display;
+        font-weight: 700;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    .breeds {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        grid-row-gap: 2rem;
+
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        padding-top: 12vh;
+
+        &-details-2 {
+            padding: 2rem;
+
+            h5 {
+                font-size: 2rem;
+            }
+
+            p {
+                width: 15rem;
+                font-size: 1.5rem;
+                color: #999;
+                font-weight: 200;
+            }
+        }
+
+    img {
+        width: 25rem;
+        height: 25rem;
+        padding: 2rem;
+    }
+    
+}
+}
